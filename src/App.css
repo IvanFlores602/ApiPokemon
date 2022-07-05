@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+}
+body{
+    background-image: -webkit-gradient(
+        radial, 
+        50% 50%, 0, 
+        50% 50%, 1000, 
+        from(rgba(245,245,245,1)), 
+        to(rgba(100,100,100,1))
+    );
+}
+.container{
+    width: 98%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+}
+.left-content,.right-content{
+    flex-basis: 60%;
+}
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:3rem;
+}
+.card{
+    width: 50%;
+    background-color:#219199;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 5px rgba(82, 75, 75, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.right-content{
+    width: 30%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top:100px;
+    right: 190px;
+}
+.right-content img{
+    margin: 1.5rem;
+    height: 160px;
+}
+.right-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.abilities{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.abilities .group{
+    background-color: #45a6b7;
+    color: rgb(22, 21, 21);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+.base-stat{
+    margin-top: 2rem;
+}
+
+.btn-group button{
+    width: 100px;
+    padding: 0.3rem 0;
+    margin: 0.5rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(20, 20, 20);
+    background-color: #4593b7;
+    border-radius: 8px;
+}
+
+.navbarLink { 
+    justify-content: center;
+  margin-right: auto;
+  padding: 1rem;
+  padding: 15px;
+  background-color: grey;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  }
+  .navbarLink Link{
+    background-color: #219199;
+  }
+  .pokemon{
+    margin: 0px 170px;
+  }
+  .tarjetaPoke{
+    font-size: xx-large;
+    width: 100px;
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    /* IMPORTANTE */
+    text-align: center;
+  }
+  .imagen{
+    height: 200px;
+  }.img{
+    margin: 0px 600px
+    
+  }
+  .wrapper {
+    position: relative;
+    perspective: 40em;
+    display: grid;
+    transform-style: preserve-3d;
+  }
+  
+  .card2  {
+    grid-area: 1 / 1;
+    height: 200px;
+    width: 1200px;
+    transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+    background: rgba(249, 198, 26, 0.88);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    backface-visibility: hidden;
+    box-shadow: 0 10px 30px -3px rgba(0,0,0,.1);
+  }
+
+  
+  .card2 .enclosed  {
+    background: #000;
+    line-height: 1;
+    color: rgba(249, 198, 26, 1);
+    padding: 0 5px;
+    display: inline-block;
+    transform: translate(-1px, 1px) scale(0.75);
+    transform-origin: right center;
+  }
+  
+  .wrapper:before {
+    --bw: 9px;
+    grid-area: 1 / 1;
+    content: '';
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    margin-top: calc(-1 * var(--bw));
+    margin-left: calc(-1 * var(--bw));
+    background: transparent;
+    transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+    
+    box-sizing: content-box;
+  }
+  
+  
+  .wrapper:hover > div,
+  .wrapper:hover:before {
+    transform: none;
+  }
+  
+  
+  .wrapper > div,
+  .wrapper:before {
+    will-change: transform;
+    transition: .3s transform cubic-bezier(.25,.46,.45,1);
+  }
+  
