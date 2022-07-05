@@ -1,11 +1,22 @@
 import React from 'react';
-import Pokemon from './Components/Pokemon';
-import './Components/style.css'
+import './App.css'
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-     <Pokemon />
+      <nav
+        style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1rem",
+        }}
+      > <div className='navbarLink'>
+        <Link to="/pokemones">Pokemones</Link>|{" "}
+        <Link to="/pokemonId">Buscar Pokemones</Link> |{" "}
+        <Link to="/matricula">Alumno</Link>
+      </div>
+      </nav>
+      <Outlet />
     </>
   );
 }
