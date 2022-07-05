@@ -37,16 +37,12 @@ const Pokemon=()=>{
             <div className="container">
                 <div className="left-content">
                     <Card pokemon={pokeData} loading={loading} infoPokemon={poke=>setPokeDex(poke)}/>
-                    
                     <div className="btn-group">
-                        {  prevUrl && <button onClick={()=>{
-                            setPokeData([])
-                           setUrl(prevUrl) 
+                        {  prevUrl && <button onClick={()=>{setPokeData([]) 
+                        setUrl(prevUrl) 
                         }}>Atras</button>}
-
-                        { nextUrl && <button onClick={()=>{
-                            setPokeData([])
-                            setUrl(nextUrl)
+                        { nextUrl && <button onClick={()=>{setPokeData([])
+                        setUrl(nextUrl)
                         }}>Siguiente</button>}
 
                     </div>

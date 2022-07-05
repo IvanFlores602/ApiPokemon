@@ -5,7 +5,13 @@
     font-family:sans-serif;
 }
 body{
-    background-color: #ce70e6;
+    background-image: -webkit-gradient(
+        radial, 
+        50% 50%, 0, 
+        50% 50%, 1000, 
+        from(rgba(245,245,245,1)), 
+        to(rgba(100,100,100,1))
+    );
 }
 .container{
     width: 98%;
@@ -22,8 +28,8 @@ body{
     grid-gap:3rem;
 }
 .card{
-    width: 100px;
-    background-color:#839921;
+    width: 112px;
+    background-color:#219199;
     border-radius: 1rem;
     box-shadow: 0px 5px 5px rgba(82, 75, 75, 0.5);
     padding: 0;
